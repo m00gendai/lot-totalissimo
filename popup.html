@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="popup.css">
+	</head>
+	<body>
+		<div class="titleRow">
+			<h1>Lot-Totalissimo</h1>
+			<div class="container">
+				<div id="overlay">
+					<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier"> 
+							<path id="offButton" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.5 4.742a13 13 0 11-13 0M16 3v10"></path>
+						</g>
+					</svg>
+				</div>
+				<input id="toggle" type="range" min="0" max="1" step="1"/>
+			</div>
+		</div>
+		<div class="valueRow">
+			<p>Aufpreis in Prozent:</p>
+			<div class="inputFields">
+				<input type="number" min="1" max="100" step="1" id="prozent" />
+				<button id="confirm">OK</button>
+			</div>
+		</div>
+		<div class="linkRow">
+			<p class="attribution">Eine Extension von&nbsp;</p><a href="https://schussfreude.ch" target="_blank">schussfreude.ch</a><p>&nbsp;/&nbsp;<p><a href="https://waffenforum.ch" target="_blank">Waffenforum</a>
+		<script src="popup.js"></script>
+	</body>
+</html>

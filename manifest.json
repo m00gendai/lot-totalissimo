@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "Lot Totalissimo",
+	"description": "Zeigt während einer Live-Auktion der Plattform \"Lot-Tissimo\" eine zusätzliche Reihe mit dem geforderten Preis plus Aufgeld an.",
+	"author": "Marcel Weber",
+	"homepage_url": "https://https://github.com/m00gendai",
+	"version": "1.0",
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "128.png"
+	},
+	"content_scripts": [
+		{
+		  "js": ["content-script.js"],
+		  "matches": [
+			"https://gaplive-eu.globalauctionplatform.com/*"
+		  ]
+		}
+	],
+	"permissions": [
+		"storage", "scripting", "activeTab"
+	],
+	"host_permissions": [
+		"https://gaplive-eu.globalauctionplatform.com/*"
+	]	
+}
